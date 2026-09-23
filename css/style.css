@@ -1,0 +1,13 @@
+:root{
+    --main-color2:black;
+    --main-color:rgba(241, 243, 252, 0.734);
+    --primary-color: #0F172A;
+    --secondary-color:#3B82F6;
+    --text-color:#3d454f;
+    --border-color:#2e30305f;
+    --danger:rgba(201, 46, 46, 0.875);
+    --background-light:rgb(251, 251, 251);
+    --color-input:rgba(90, 174, 252, 0.1);
+    --input-color-shadow:rgba(2, 73, 187, 0.968);
+
+}

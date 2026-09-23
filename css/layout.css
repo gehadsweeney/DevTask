@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-color);
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+#app {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  min-height: 100vh;
+}
+
+/* ............side-bar........--------------------------- */
+#side {
+  grid-area: sidebar;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+}
+.sideBar {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------logo----------------------------------------- */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding-bottom: 2rem;
+}
+.logo svg {
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  background-color: var(--main-color2);
+  color: var(--main-color);
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.logo-text h1 {
+  font-size: 1.6rem;
+  color: var(--main-color2);
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+.logo-text span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+}
+
+/* --------button add task-------------- --------------*/
+.add-task {
+  width: 100%;
+  padding: 0.7rem 0rem;
+  background-color: var(--main-color2);
+  border-radius: 0.5rem;
+  color: var(--background-light);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  gap: 0.2rem;
+}
+.add-task:hover {
+  color: var(--background-light);
+  cursor: pointer;
+}
+
+/* --------------------------------nav------------------------ */
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1.9rem;
+  padding-bottom: 12rem;
+  border-bottom: 1px solid var(--border-color);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  text-align: end;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem 0rem 0.5rem 0.6rem;
+  border-radius: 0.6rem;
+}
+nav li a:hover {
+  background-color: rgba(12, 137, 254, 0.074);
+}
+nav li a.active {
+  color: var(--input-color-shadow);
+  font-weight: 600;
+  border-right: 0.3rem solid var(--input-color-shadow);
+}
+
+/* -------------------footer side bar --------------------------- */
+.sideBar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 1rem;
+}
+.sideBar-footer span {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+.sideBar-footer div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0rem 0.5rem 0.6rem;
+  border-radius: 0.6rem;
+}
+.sideBar-footer .sign-out,
+.sign-out span {
+  color: var(--danger);
+}
+.sideBar-footer div:hover {
+  background-color: rgba(12, 137, 254, 0.074);
+}
+.sideBar-footer .sign-out:hover {
+  background-color: rgba(241, 78, 78, 0.178);
+  cursor: pointer;
+}
+
+/* ..........header............ */
+#header {
+  grid-area: header;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* ................search............... */
+.search {
+  position: relative;
+  width: min(500px, 100%);
+}
+.search svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.search input {
+  background-color: var(--color-input);
+  width: 100%;
+  padding: 10px 14px 10px 42px;
+  border: 1px solid var(--border-color);
+  border-radius: 1.5rem;
+  outline: none;
+}
+
+.search input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px var(--input-color-shadow);
+}
+
+/* .................icons Headers................ */
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  overflow: hidden;
+}
+.user-profile img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ...............main........... */
+#main-content {
+  grid-area: main;
+  padding: 1.5rem;
+}

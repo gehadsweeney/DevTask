@@ -1,0 +1,213 @@
+/* ------------header--------- */
+.projects-header h2 ,.tasks-header h2{
+    margin: 0;
+    font-size: 1.8rem;
+}
+.projects-header p ,.tasks-header p{
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+.projects-header-actions , .tasks-header-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects-header-buttons , .tasks-header-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* -------------btn add project------------------ */
+
+.add-project , .add-task-page{
+  padding: 0.7rem 1rem;
+  background-color: var(--main-color2);
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--background-light);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  gap: 0.5rem;
+}
+.add-project svg , .add-task-page svg{
+  width: 1rem;
+  height: 1rem;
+}
+.add-project:hover , .add-task-page:hover{
+  color: var(--background-light);
+  cursor: pointer;
+}
+
+
+/* ------------btn status--------- */
+.project-status-filter , .tasks-project-filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+
+    font-size: 0.7rem;
+    font-weight: 500;
+
+    padding: 0.7rem 1rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+
+    background-color: var(--background-light);
+
+    color: var(--main-color2);
+}
+
+.project-status-filter svg , .tasks-project-filter svg {
+    width: 16px;
+    height: 16px;
+}
+
+.project-status-filter label , .tasks-project-filter label{
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.project-status-filter select , .tasks-project-filter select{
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+/* ----------btn filter------------- */
+.projects-filter , .tasks-filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    font-size: 0.7rem;
+    font-weight: 500;
+
+    padding: 0.7rem 1rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+
+    background-color: var(--background-light);
+
+    color: var(--main-color2);
+}
+.projects-filter svg , .tasks-filter svg {
+    width: 16px;
+    height: 16px;
+}
+.project-status-filter:hover, .projects-filter:hover , .tasks-project-filter:hover , .tasks-filter:hover{
+    background-color: var(--color-input);
+    cursor: pointer;
+}
+
+
+/* -------------Cards---------------- */
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 2.5rem;
+}
+/* !!!!!!!!!!!!!!-----project-card in dashboard.css-----!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.project-card-status{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+.project-card-status h3{
+    margin: 0;
+    font-size: 1.4rem;
+}
+.project-card-status span{
+    font-size: 0.9rem;
+    color: var(--input-color-shadow);
+    padding: 0.6rem;
+    border-radius: 0.7rem;
+    background-color: var(--color-input);
+}
+.project-card-header p{
+    margin: 0;
+    padding-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+
+
+/* ---------foooterr------------ */
+.project-card-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-progress-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-color);
+
+
+}
+
+.project-progress-value {
+    color: var(--input-color-shadow);
+    font-weight: 600;
+}
+
+.project-progress {
+    width: 100%;
+    height: 6px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: transparent;
+
+    cursor: default;
+    padding-bottom: 1rem;
+    border-bottom:1px solid var(--border-color);
+}
+
+.project-progress::-webkit-slider-runnable-track {
+    height: 6px;
+
+    border-radius: 999px;
+
+    background: var(--input-color-shadow);
+}
+
+.project-progress::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 14px;
+    height: 14px;
+
+    margin-top: -4px;
+
+    border-radius: 50%;
+
+    background: var(--input-color-shadow);
+
+    cursor: default;
+}

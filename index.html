@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev_tasks</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/dashboard.css">
+    <link rel="stylesheet" href="css/pages/myTasks.css">
+    <link rel="stylesheet" href="css/pages/projects.css">
+    <link rel="stylesheet" href="css/pages/statistics.css">
+    <link rel="stylesheet" href="css/pages/settings.css">
+
+</head>
+<body>
+    <div id="app">
+      <aside id="side">
+        <div class="sideBar">
+        <div class="logo">
+            <i data-lucide="FolderCode"></i>
+            <div class="logo-text">
+                <h1>DevTask</h1>
+                <span>DEVELOPER</span>
+                <span>WORKSPACE</span>
+            </div>
+        </div>
+        <div class="add-task">
+            <i data-lucide="Plus"></i>
+            <a class="btn-addTask">
+                CREATE TASK
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" data-page="dashboard">
+                        <i data-lucide="layout-dashboard"></i>
+                        <span>Dashboard</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-page="myTasks">
+                        <i data-lucide="list-checks"></i>
+                        <span>My Tasks</span> 
+                    </a>
+                </li>
+                <li>
+                    
+                    <a href="#" data-page="projects">
+                        <i data-lucide="waypoints"></i>
+                        <span>Projects</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-page="statistics">
+                        <i data-lucide="chart-column-increasing"></i>
+                        <span>Statistics</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-page="Settings">
+                        <i data-lucide="settings"></i>
+                        <span>Settings</span> 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sideBar-footer">
+            <div>
+             <i data-lucide="circle-question-mark"></i>
+            <span>
+                Help
+            </span>
+            </div>
+
+            <div class="sign-out">
+            <i data-lucide="log-out"></i>
+            <span >Sign Out</span>
+            </div>
+
+        </div>
+        </div>
+
+      </aside>
+    
+      <header id="header" >
+        <div class="search">
+            <i data-lucide="search"></i>
+            <input type="search" placeholder="Search tasks....">
+        </div>
+        <div class="header-icon">
+            <i data-lucide="bell"></i>
+            <i data-lucide="circle-question-mark"></i>
+            <div class="user-profile">
+                <img src="./assets/images/user.jpeg" alt="User profile">
+            </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+      </main>
+    </div>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
