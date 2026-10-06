@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "DevTasks",
+    "description": "A task management web application for managing projects and development tasks.",
+    "status": "active",
+    "totalTasks": 5,
+    "completedTasks": 2,
+    "progress": 40
+  },
+  {
+    "id": 2,
+    "name": "Mobile Masr",
+    "description": "An e-commerce platform for selling mobile phones and electronics.",
+    "status": "active",
+    "totalTasks": 5,
+    "completedTasks": 3,
+    "progress": 60
+  },
+  {
+    "id": 3,
+    "name": "EELU Library Hub",
+    "description": "A digital library platform for managing books, users, and educational resources.",
+    "status": "completed",
+    "totalTasks": 5,
+    "completedTasks": 5,
+    "progress": 100
+  },
+  {
+    "id": 4,
+    "name": "CareerFlow AI",
+    "description": "An AI-powered platform for managing job applications and matching resumes with job descriptions.",
+    "status": "planned",
+    "totalTasks": 5,
+    "completedTasks": 0,
+    "progress": 0
+  }
+]
